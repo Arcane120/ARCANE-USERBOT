@@ -89,10 +89,10 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        qwe = await eor(event, f"DEVIL BOT Has Successfully unloaded {shortname}")
+        qwe = await eor(event, f"ARCANE BOT Has Successfully unloaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            "DEVIL BOT has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
+            "ARCANE BOT has Successfully unloaded {shortname}\n{}".format(shortname, str(e))
         )
 
 
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            f"DEVIL BOT could not load {shortname} because of the following error.\n{str(e)}"
+            f"ARCANE BOT could not load {shortname} because of the following error.\n{str(e)}"
         )
