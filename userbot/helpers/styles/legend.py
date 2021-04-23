@@ -23,8 +23,8 @@ import os
 import datetime
 #importing finished
 from userbot import botnickname 
-BOT = str(botnickname) if botnickname else "devil BOT"
-NAME = str(ALIVE_NAME) if ALIVE_NAME else "devil BOY"
+BOT = str(botnickname) if botnickname else "ARCANE BOT"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE BOT"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
@@ -33,18 +33,18 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-𝗗𝗘𝗩𝗜𝗟 = "[𝗗𝗲𝘃𝗶𝗹](https://t.me/luciifeermorningstar)"
+𝗔𝗥𝗖𝗔𝗡𝗘 = "[𝗔𝗥𝗖𝗔𝗡𝗘](https://t.me/Arcane_Bot_Support)"
 #my bots repo 👇
-REPO = "[𝗗𝗘𝗩𝗜𝗟 𝗕𝗢𝗧](https://github.com/luciifeermorningstar/Devil)"
+REPO = "[𝗔𝗥𝗖𝗔𝗡𝗘 𝗕𝗢𝗧](https://github.com/Arcane120/ARCANE-USERBOT)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 global ghanti
 X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
-GROUP = "[SUPPORT GROUP](https://t.me/deviluserbot)"
+GROUP = "[SUPPORT GROUP](https://t.me/Arcane_Bot_Support)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
-ALIVE = "∂єνιℓ υѕєяησт ιѕ ση🔥 ƒιяє 🔥" #make by ∂єνιℓ
-OP = "𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸 𝙰𝙼 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃💝"
+ALIVE = "𝒜𝓇𝒸𝒶𝓃ℯ 𝓊𝓈ℯ𝓇𝒷ℴ𝓉 𝒾𝓈 ℴ𝓃 𝒻𝒾𝓇ℯ 🔥" #make by 𝒶𝓇𝒸𝒶𝓃ℯ
+OP = "𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙰𝚁𝙲𝙰𝙽𝙴 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸 𝙰𝙼 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃💝"
 EMOJI = "🔥"
