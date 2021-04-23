@@ -1,5 +1,5 @@
 
-name: LEGENDX
+name: Arcane120
 
 on: push
 
@@ -35,6 +35,6 @@ jobs:
 
           repository: .
 
-          commit_user_name: LEGENDXOP
+          commit_user_name: ARCANE-USERBOT
 
           commit_user_email: legendxx08377@gmail.com
