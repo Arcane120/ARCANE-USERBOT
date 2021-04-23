@@ -2,7 +2,7 @@
 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Arcane120/Devil2.0.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2FARCANE-USERBOT%2Fblob%2Fmain%2FREADME.md&template=https%3A%2F%2Fgithub.com%2FArcane120%2FDevil2.0.git)
 
 
 <img src="https://telegra.ph/file/c93fe3cca630875166788.jpg"/>
