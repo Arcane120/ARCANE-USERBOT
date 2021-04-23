@@ -16,8 +16,8 @@ except:
   from pyrogram import Client, idle
 
 import asyncio
-from userbot.utils import admin_cmd as devil
-from userbot import bot as DEVILBOT
+from userbot.utils import admin_cmd as arcane
+from userbot import bot as ARCANEBOT
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
@@ -25,7 +25,7 @@ import time
 from userbot import botnickname, ALIVE_NAME, bot
 token = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
 xbot = TelegramClient("legend", API_ID, API_HASH).start(bot_token=token)
-pbot = Client("DEVIL", api_id=API_ID, api_hash=API_HASH, bot_token=token)
+pbot = Client("ARCANE", api_id=API_ID, api_hash=API_HASH, bot_token=token)
 BOT = str(botnickname) if botnickname else "ARCANE BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE BOT"
 PHOTO = os.environ.get("ALIVE_PHOTTO", None)
