@@ -4,7 +4,7 @@ from userbot.legend import BOT
 from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝙴𝚅𝙸𝙻"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE"
 
 
 @borg.on(admin_cmd(pattern=f"hbping$", outgoing=True))
