@@ -45,6 +45,6 @@ MASTER = f"[{NAME}](tg://user?id={X})"
 GROUP = "[SUPPORT GROUP](https://t.me/Arcane_Bot_Support)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
-ALIVE = "𝒜𝓇𝒸𝒶𝓃ℯ 𝓊𝓈ℯ𝓇𝒷ℴ𝓉 𝒾𝓈 ℴ𝓃 𝒻𝒾𝓇ℯ 🔥" #make by Team Arcane
+ALIVE = "𝒜𝓇𝒸𝒶𝓃ℯ 𝓊𝓈ℯ𝓇𝒷ℴ𝓉 𝒾𝓈 ℴ𝓃 𝒻𝒾𝓇ℯ 🔥" #made by Team Arcane
 OP = "𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙰𝚁𝙲𝙰𝙽𝙴 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸 𝙰𝙼 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃💝"
 EMOJI = "🔥"
