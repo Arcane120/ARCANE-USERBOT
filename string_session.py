@@ -1,7 +1,7 @@
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 print("")
-print("""Welcome To Devil BOT String Generator By @lucifeermorningstar""")
+print("""Welcome To Arcane BOT String Generator By @Arcane_Bot_Support""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = input("API_KEY: ")
@@ -17,11 +17,11 @@ while True:
    session = client.session.save()
    client.send_message(
        "me",
-       f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @deviluserbot For Any Help !"
+       f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @Arcane_Bot_Support For Any Help !"
    )
 
    print(
-       "Thanks for Choosing Legend bot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+       "Thanks for Choosing Arcane bot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
    )
  except:
   print("")
