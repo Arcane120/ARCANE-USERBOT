@@ -20,7 +20,7 @@ jobs:
 
           find: "DEVIL"
 
-          replace: "ARCANE"
+          replace: "ARCANEBOT"
 
       - name: Create Pull Request
 
