@@ -17,9 +17,9 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@master
 
                  
-          find: "HellBot"
+          find: "DEVIL"
 
-          replace: "LEGEND-BOT"
+          replace: "ARCANE"
 
       - name: Create Pull Request
 
