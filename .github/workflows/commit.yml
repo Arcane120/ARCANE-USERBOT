@@ -1,4 +1,4 @@
-name: okk
+name: commit
 on: push
 jobs:
   build:
