@@ -10,7 +10,7 @@ from userbot.utils import edit_or_reply as eor
 
 DELETE_TIMEOUT = 3
 thumb_image_path = "./Resources/IMG_20210304_093322_763.jpg"
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Devil BOT"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Arcane Bot"
 
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
