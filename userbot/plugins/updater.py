@@ -67,9 +67,9 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 
 
 Heroku = heroku3.from_key(HEROKU_API_KEY)
-GIT_REPO_NAME = "Devil2.0"
+GIT_REPO_NAME = "Heroku-Setup"
 heroku_api = "https://api.heroku.com"
-UPSTREAM_REPO_URL="https://github.com/lucifeermorningstar/Devil2.0"
+UPSTREAM_REPO_URL="https://github.com/Arcane120/Heroku-Setup"
 
 # ================= CONSTANT =================
 JAVES_NNAME = str(HEROKU_APPNAME)
