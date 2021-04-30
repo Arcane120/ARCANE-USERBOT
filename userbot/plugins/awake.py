@@ -59,7 +59,7 @@ CMD_HELP.update(
 
     {
 
-        "awake": "Plugin : arcane\
+        "awake": "Plugin : awake\
 
     \n\nSyntax : .arcane\
 
