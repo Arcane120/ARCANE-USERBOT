@@ -38,8 +38,8 @@ if TG_BOT_USER_NAME_BF_HER is not None:
             buttons = [
                 [
                     Button.url("Repo", "https://github.com/Arcane120/ARCANE-USERBOT"),
-                    Button.url("Deploy", "https://heroku.com/deploy?template=https://github.com/lucifeermorningstar/Devil/blob/master")],
-                    [Button.url("String", "https://repl.it/@lucifeermorning/DevilBot#main.py"),
+                    Button.url("Deploy", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup")],
+                    [Button.url("String", "https://replit.com/@Arcane120/ArcaneBot#main.py"),
                     Button.url("Group", "https://t.me/Arcane_Bot_Support"),
                 ]
             ]
