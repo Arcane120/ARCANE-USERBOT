@@ -56,15 +56,9 @@ async def amireallyalive(awake):
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
 
 CMD_HELP.update(
-
     {
-
-        "awake": "Plugin : awake\
-
+        "awake": "Plugin : arcane\
     \n\nSyntax : .arcane\
-
     \nFunction : you can set here costom alive pic .set var ALIVE_PHOTTO (Telegraph link)"
-
     }
-
 )
