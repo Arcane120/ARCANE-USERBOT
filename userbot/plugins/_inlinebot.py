@@ -150,7 +150,7 @@ async def _(event):
 
     logger.info(result)  # pylint:disable=E0602
 
-    await event.edit("Telethon UserBot powered ARCANE_𝚋𝚘𝚝")
+    await event.edit("Telethon UserBot powered ARCANE_BOT")
 
 
 
