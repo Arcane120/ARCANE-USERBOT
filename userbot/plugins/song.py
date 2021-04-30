@@ -115,7 +115,7 @@ thumb_image_path = "./resources/541200.png"
 
 
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE"
 
 LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
@@ -429,7 +429,7 @@ BOT_MSG = os.environ.get("BOT_MSG", None)
 
 if BOT_MSG is None:
 
-    BOT_LIT = f"Hello Sir MySelf DEVIL BOT Here For  {LIGHTNINGUSER}'s Protection "
+    BOT_LIT = f"Hello Sir MySelf ARCANE_BOT Here For  {LIGHTNINGUSER}'s Protection "
 
 else:
 
@@ -447,13 +447,13 @@ if LIGHTNING_WARN is None:
 
     f"**{BOT_LIT}"
 
-    f"** Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me 🔱🔱  **\n\n"
+    f"** Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me ⚓⚓  **\n\n"
 
     f"**My Master {LIGHTNINGUSER} is Busy Right Now !** \n"
 
     f"{LIGHTNINGUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
 
-    f"**Btw Dont Spam Or Get Banned** ⚡⚡ \n\n"
+    f"**Btw Dont Spam Or Get Banned** 💀💀 \n\n"
 
     f"**Choose Any Reason Then Get Lost**\n"
 
@@ -469,7 +469,7 @@ LIGHTNING_BOT_PIC = os.environ.get("PMPERMIT_PIC", None)
 
 if LIGHTNING_BOT_PIC is None:
 
-    LIGHTNING_WARNING = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
+    LIGHTNING_WARNING = "https://telegra.ph/file/59741883f678fe0589099.jpg"
 
 else:
 
@@ -535,7 +535,7 @@ async def inline_handler(lightning):
 
                 [custom.Button.inline("Help", data="what?")],
 
-                [Button.url("Commands Not Working🤔", "https://t.me/deviluserbot")],
+                [Button.url("Commands Not Working🤔", "https://t.me/Arcane_Bot_Support")],
 
                 [Button.url("Help Article 🤔", "https://app.gitbook.com/@poxsisofficial/s/help/")],
 
@@ -547,7 +547,7 @@ async def inline_handler(lightning):
 
                     "Want To Learn CMDS☺️☺️",
 
-                    "https://t.me/deviluserbot" ,
+                    "https://t.me/Arcane_Bot_Support" ,
 
                     )
 
@@ -685,11 +685,11 @@ async def lightning_pugins_query_hndlr(lightning):
 
            
 
-           lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
+           lightning_help_strin  = f"**✨✨ NAME ✨✨ :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
 
            lightning_is_best = lightning_help_strin 
 
-           lightning_is_best += "\n\n**In Case Any Problem @deviluserbot** ".format(light_pulu_name)
+           lightning_is_best += "\n\n**In Case Any Problem @Arcane_Bot_Support** ".format(light_pulu_name)
 
         
 
@@ -699,7 +699,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
             for i in CMD_HELP:
 
-                lightning_help_strin += "🔥🔥 " + i + "\n"
+                lightning_help_strin += "✨✨ " + i + "\n"
 
                 for iter_list in CMD_HELP[i]:
 
@@ -721,7 +721,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
                 for i in CMD_LIST[light_pulu_name]:
 
-                    lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @deviluserbot"
+                    lightning_help_strin  = f"**✨✨ NAME ✨✨ :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @Arcane_Bot_Support"
 
                     lightning_help_strin += "\n    " + i
 
@@ -731,21 +731,21 @@ async def lightning_pugins_query_hndlr(lightning):
 
     else:
 
-           lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @deviluserbot"
+           lightning_help_strin  = f"**✨✨ NAME ✨✨ :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @Arcane_Bot_Support"
 
            lightning_is_best = lightning_help_strin 
 
-           lightning_is_best += "\n\n**In Case Any Problem @deviluserbot** ".format(light_pulu_name)
+           lightning_is_best += "\n\n**In Case Any Problem @Arcane_Bot_Support** ".format(light_pulu_name)
 
-    lightning_help_strin = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Set for this Plugin 😑\n\n**Ask at @deviluserbot"
+    lightning_help_strin = f"**✨✨ NAME ✨✨ :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Set for this Plugin 😑\n\n**Ask at @Arcane_Bot_Support"
 
     lightning_is_best = lightning_help_strin 
 
-    lightning_is_best += "\n\n**In Case Any Problem @deviluserbot** ".format(light_pulu_name)    
+    lightning_is_best += "\n\n**In Case Any Problem @Arcane_Bot_Support** ".format(light_pulu_name)    
 
     if len(lightning_is_best) >= 4096:
 
-          keinshin = "` Wait. (🔥🔥🔥🔥) `"
+          keinshin = "` Wait. (⚓⚓⚓⚓) `"
 
           await lightning.answer(keinshin, cache_time=0, alert=True)
 
@@ -1239,9 +1239,9 @@ async def ho(event):
 
     buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
 
-    ho = f"""LEGENDBOT Is Here With Stunning Help !\n
+    ho = f"""ARCANE_BOT Is Here With Stunning Help !\n
 
-In Case Any Problem @deviluserbot \nTottal Plugs( 🧐): {len(CMD_LIST)}"""
+In Case Any Problem @Arcane_Bot_Support \nTottal Plugs( 🧐): {len(CMD_LIST)}"""
 
     await event.edit(message=ho, buttons=buttons)
 
@@ -1279,8 +1279,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
         custom.Button.inline(
 
-            "{} {} {}".format("⚡", x, "🔥"), data="_lightning_plugins_{}".format(x)
-
+            "{} {} {}".format("✨", x, "✨"), data="_lightning_plugins_{}".format(x)
         )
 
         for x in lightning_plugins
@@ -1309,7 +1308,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
                 custom.Button.inline(
 
-                    "😑", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
+                    "⚓", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
@@ -1321,7 +1320,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
                custom.Button.inline(
 
-                    "🥴 ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
+                    "⚓", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
