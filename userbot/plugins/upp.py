@@ -19,7 +19,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
 OFFICIAL_UPSTREAM_REPO = "https://github.com/Arcane120/Heroku-Setup"
 BOT_IS_UP_TO_DATE = "âBOT is up-to-date!â"
 NEW_BOT_UP_DATE_FOUND = (
-    "**DEVIL BOT  Update Found For** {branch_name}\n"
+    "**ARCANE_BOT  Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
