@@ -59,6 +59,6 @@ CMD_HELP.update(
     {
         "awake": "Plugin : arcane\
     \n\nSyntax : .arcane\
-    \nFunction : Do this to check me working or not.
+    \nFunction : Do this to check me working.
     }
 )
