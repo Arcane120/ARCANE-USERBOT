@@ -94,7 +94,7 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f"""Userbot Helper.. 𝗣𝗥𝗢𝗩𝗜𝗗𝗘𝗗 𝗕𝗬 𝗔𝗥𝗖𝗔𝗡𝗘 𝗨𝗦𝗘𝗥𝗕𝗢𝗧 \n
+            help_string = f"""⚓✨𝐀𝐑𝐂𝐀𝐍𝐄 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔✨⚓. 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 @Arcane_Universe \n
 
 Userbot Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
