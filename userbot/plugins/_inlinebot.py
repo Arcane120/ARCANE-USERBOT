@@ -96,7 +96,7 @@ async def cmd_list(event):
 
             help_string = f"""⚓✨𝐀𝐑𝐂𝐀𝐍𝐄 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐇𝐄𝐋𝐏 𝐌𝐄𝐍𝐔✨⚓. 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 @Arcane_Universe \n
 
-Userbot Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
+𝑯𝒆𝒓𝒆 𝒊𝒔 𝒕𝒉𝒆 𝒉𝒆𝒍𝒑 𝒎𝒆𝒏𝒖 𝒇𝒐𝒓 𝒂𝒍𝒍 𝒎𝒚 𝒑𝒍𝒖𝒈𝒊𝒏𝒔.\n𝑫𝑶 .help plugin_name 𝒇𝒐𝒓 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝒊𝒏 𝒄𝒂𝒔𝒆 𝒊𝒇 𝒑𝒐𝒑𝒖𝒑 𝒅𝒐𝒆𝒔𝒏'𝒕 𝒂𝒑𝒑𝒆𝒂𝒓 𝒐𝒓 𝒗𝒊𝒔𝒊𝒕 @Arcane_Bot_Support 𝒇𝒐𝒓 𝒂𝒏𝒚 𝒌𝒊𝒏𝒅 𝒐𝒇 𝒉𝒆𝒍𝒑,"""
 
             results = await bot.inline_query(  # pylint:disable=E0602
 
