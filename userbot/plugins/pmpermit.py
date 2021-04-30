@@ -46,7 +46,7 @@ from userbot.uniborgConfig import Config
 
 from var import Var
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "Devil"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "Arcane"
 
 from userbot.utils import admin_cmd as lightning_cmd
 
@@ -130,7 +130,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
                     lightning_sql.approve(chat.id, "outgoing")
 
-                    bruh = "Auto-approved bcuz outgoing 😗😗👍"
+                    bruh = "Auto-approved bcuz outgoing 🤟"
 
                     rko = await borg.send_message(event.chat_id, bruh)
 
@@ -516,11 +516,11 @@ async def krish_op(event):
 
         if not lightning_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**GOD FATHER(DEVIL) IS HERE**")
+            lightning_sql.approve(chats.id, "**GOD FATHER(ARCANE) IS HERE**")
 
             await borg.send_message(
 
-                chats, "**Heya @lucifermorningstarbackup YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
+                chats, "**Heya @Arcane_Devs YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
 
             )
 
@@ -550,7 +550,7 @@ async def krish_op(event):
 
             await borg.send_message(
 
-                chats, f"**Good To See You @Lucifermorningstarbackup How Can I Disapprove You Come In Sir**ðð"
+                chats, f"**Good To See You @Arcane_Devs How Can I Disapprove You Come In Sir**ðð"
 
             )
 
