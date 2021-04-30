@@ -40,7 +40,7 @@ global ghanti
 @borg.on(admin_cmd(pattern=r"awake")) 
 @borg.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
 async def amireallyalive(awake):
-   """ For .awake command, check if the bot is running.  """
+   """ For .arcane command, check if the bot is running.  """
    tag = borg.uid
    uptm = await legend.get_readable_time((time.time() - StartTime))
    ALIVE_MESSAGE= f" ⚡️ {BOT} ⚡️  IS ON 🔥 FIRE 🔥"
@@ -57,7 +57,7 @@ async def amireallyalive(awake):
 
 CMD_HELP.update(
     {
-        "awake": "Plugin : arcane\
+        "arcane": "Plugin : arcane\
     \n\nSyntax : .arcane\
     \nFunction : you can set here costom alive pic .set var ALIVE_PHOTTO (Telegraph link)"
     }
