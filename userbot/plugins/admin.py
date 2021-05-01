@@ -133,7 +133,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "𝙳𝙴𝚅𝙸𝙻'𝚂 𝚂𝙾𝙽"  # Just in case.
+        rank = "𝙰𝚁𝙲𝙰𝙽𝙴"  # Just in case.
     if user:
         pass
     else:
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit(f"𝚈𝚞𝚙𝚙 𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝚒𝚜 𝙿𝚛𝚘𝚖𝚘𝚝𝚎𝚍 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝚋𝚢 {BOT} ⚡\n 𝙳𝚎𝚟𝚒𝚕 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 𝚄𝚜𝚎𝚍 𝙱𝚢 {MASTER} 🔥")
+        await promt.edit(f"𝐘𝐮𝐩𝐩 𝐓𝐡𝐢𝐬 𝐔𝐬𝐞𝐫 𝐈𝐬 𝐏𝐫𝐨𝐦𝐨𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐁𝐲 {BOT} ⚡\n 𝐀𝐫𝐜𝐚𝐧𝐞 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐔𝐬𝐞𝐝 𝐛𝐲 {MASTER} 🔥")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit(f" 𝙱𝚑𝚎𝚛𝚢 𝚂𝚎𝚍 𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝙸𝚜 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙳𝚎𝚖𝚘𝚝𝚎𝚍 𝚋𝚢 {BOT} ⚡⚡\n  ❤ = {MASTER} 🔥")
+    await dmod.edit(f' 𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝙸𝚜 𝚂𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢 𝙳𝚎𝚖𝚘𝚝𝚎𝚍 𝚋𝚢 {BOT} ⚡⚡\n  ❤ = {MASTER} 🔥")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -232,7 +232,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`𝙱𝚊𝚗𝚗𝚒𝚗𝚐 𝚃𝚑𝚒𝚜 𝚄𝚜𝚎𝚛 𝙱𝚎𝚌𝚊𝚞𝚜𝚎 𝚂𝚑𝚒𝚝𝚜 💩💩💩 𝙰𝚛𝚎 𝙽𝚘𝚝 𝙰𝚕𝚕𝚘𝚠𝚎𝚍 𝙷𝚎𝚛𝚎`")
+    await bon.edit("`𝐒𝐡𝐮𝐭 𝐓𝐡𝐞 𝐅𝐮𝐜𝐤 𝐎𝐟𝐟 𝐀𝐧𝐝 𝐓𝐚𝐤𝐞 𝐓𝐡𝐢𝐬 𝐁𝐚𝐧`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
