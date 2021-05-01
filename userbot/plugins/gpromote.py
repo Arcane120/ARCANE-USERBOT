@@ -85,7 +85,7 @@
 # Pls kang mat krna pyar se bol rha hu, nhi to DMCA hai hi
 
 # code starting...
-from ARCANE import CMD_HELP
+from Arcane import CMD_HELP
 
 marculs=9
 from telethon.errors.rpcerrorlist import (UserIdInvalidError,
