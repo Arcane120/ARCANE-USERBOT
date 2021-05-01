@@ -129,9 +129,9 @@ from telethon.tl.types import (ChannelParticipantsAdmins,
                                      MessageEntityMentionName,
                                        MessageMediaPhoto)
 # back click kar madharchod # back click kar madharchod # back click kar madharchod 
-from ARCANE.utils import register, errors_handler
-from ARCANE.utils import admin_cmd
-from ARCANE import bot as borg
+from Arcane.utils import register, errors_handler
+from Arcane.utils import admin_cmd
+from Arcane import bot as borg
 # Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
 # Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
 # Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
