@@ -12,7 +12,7 @@ from telethon import events, functions, version
 
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@teamishere"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@ARCANEBOTISLIVE"
 
 
 
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption="COMMANDS In LEGEND BOT",
+                        caption="COMMANDS In ARCANE BOT",
 
                         reply_to=reply_to_id
 
