@@ -40,10 +40,10 @@ global ghanti
 @borg.on(admin_cmd(pattern=r"arcane")) 
 @borg.on(sudo_cmd(pattern="arcane ?(.*)", allow_sudo=True))
 async def amireallyalive(arcane):
-   """ For .arcane command, check if the bot is running.  """
+   """ For .arcane command, check if the bot is running or not.  """
    tag = borg.uid
    uptm = await legend.get_readable_time((time.time() - StartTime))
-   ALIVE_MESSAGE= f" ⚡️ {BOT} ⚡️  IS ON 🔥 FIRE 🔥"
+   ALIVE_MESSAGE= f" 🤖 {BOT} 🤖 𝑰𝑺 𝑼𝑷 𝑨𝑵𝑫 𝑹𝑬𝑨𝑫𝒀 𝑻𝑶 𝑺𝑬𝑹𝑽𝑬 𝒀𝑶𝑼⚓.  "
    ALIVE_MESSAGE += "\n\n"
    ALIVE_MESSAGE += "🚨 𝚂𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂 🚨\n\n"
    ALIVE_MESSAGE += "☎️ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 ☎️ : 1.19.5\n\n"
