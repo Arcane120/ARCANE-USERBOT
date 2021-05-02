@@ -37,10 +37,10 @@ if TG_BOT_USER_NAME_BF_HER is not None:
         if query.startswith("alive") and event.query.user_id == me.id:
             buttons = [
                 [
-                    Button.url("Repo", "https://github.com/Arcane120/ARCANE-USERBOT"),
-                    Button.url("Deploy", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup")],
-                    [Button.url("String", "https://replit.com/@Arcane120/ArcaneBot#main.py"),
-                    Button.url("Group", "https://t.me/Arcane_Bot_Support"),
+                    Button.url("✨𝚁𝙴𝙿𝙾✨", "https://github.com/Arcane120/ARCANE-USERBOT"),
+                    Button.url("⚓𝙳𝙴𝙿𝙻𝙾𝚈⚓", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup")],
+                    [Button.url("🚨𝚂𝚃𝚁𝙸𝙽𝙶🚨", "https://replit.com/@Arcane120/ArcaneBot#main.py"),
+                    Button.url("⚡𝙶𝚁𝙾𝚄𝙿⚡", "https://t.me/Arcane_Bot_Support"),
                 ]
             ]
             if ALIVE_PHOTTO and ALIVE_PHOTTO.endswith((".jpg", ".png", "gif", "mp4")):
