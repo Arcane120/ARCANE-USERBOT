@@ -52,7 +52,7 @@ async def FindMusicPleaseBot(gaana):
 
             return
 
-        await gaana.edit("`Sending Your Music...wait!!! 😉😎`")
+        await gaana.edit("`Sending Your Music...wait!!! 🎵🎧`")
 
         await bot.send_file(gaana.chat_id, cobra)
 
@@ -379,7 +379,7 @@ async def getmusic(so):
     await so.edit("🔹Ok wait... 📡Searching your song🔸")
     async with bot.conversation(chat) as conv:
           await asyncio.sleep(2)
-          await so.edit("📥Downloading...Please wait🤙")
+          await so.edit("📥Downloading...Please wait✨")
           try:
               msg = await conv.send_message(link)
               response = await conv.get_response()
@@ -387,9 +387,9 @@ async def getmusic(so):
               """ - don't spam notif - """
               await bot.send_read_acknowledge(conv.chat_id)
           except YouBlockedUserError:
-              await so.edit("Please unblock @SongsForYouBot and try searching again🤐")
+              await so.edit("Please unblock @SongsForYouBot and try searching again🙃")
               return
-          await so.edit("Ohh.. I got something!! Wait sending😋🤙")
+          await so.edit("Ohh.. I got something!! Wait sending🚨✨")
           await asyncio.sleep(3)
           await bot.send_file(so.chat_id, respond)
     await so.client.delete_messages(conv.chat_id,
@@ -482,7 +482,7 @@ async def _(event):
               await borg.send_message(event.chat_id, details)
               await conv.get_response()
               songh = await conv.get_response()
-              await borg.send_file(event.chat_id, songh, caption="🔆**Here's the requested song!**🔆\n`Check out` [LEGENDBOT](https://t.me/LEGENDBOT_Official)")
+              await borg.send_file(event.chat_id, songh, caption="🎵**Here's the requested song!**🎵\n`Check out` [ARCANEBOT](https://t.me/Arcane_Bot_Support)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
