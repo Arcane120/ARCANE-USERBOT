@@ -25,7 +25,7 @@ from io import BytesIO
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙰𝚁𝙲𝙰𝙽𝙴"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
 
-pro_text=(f"**{BOT} IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Arcane_Bot_Support)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [ARCANE BOT](https://github.com/Arcane120/ARCANE-USERBOT/License)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [ARCANE BOT](https://github.com/Arcane120/ARCANE-USERBOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
+pro_text=(f"**{BOT} 𝙸𝚂 𝚄𝙿 𝙰𝙽𝙳 𝚁𝙴𝙰𝙳𝚈 𝚃𝙾 𝚂𝙴𝚁𝚅𝙴 𝚈𝙾𝚄✨ **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/Arcane_Bot_Support)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [ARCANE BOT](https://github.com/Arcane120/ARCANE-USERBOT/License)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [ARCANE BOT](https://github.com/Arcane120/ARCANE-USERBOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
 TG_BOT_USER_NAME_BF_HER = os.environ.get("ALIVE_PHOTTO", None)
 if TG_BOT_USER_NAME_BF_HER is not None:
     @tgbot.on(events.InlineQuery)
