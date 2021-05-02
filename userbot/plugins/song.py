@@ -313,7 +313,7 @@ async def _(event):
 
         if response.text.startswith("I can't find that"):
 
-            await event.edit("")
+            await event.edit("🤖")
 
         else:
 
