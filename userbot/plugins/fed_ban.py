@@ -2,18 +2,21 @@
 #CREDITS TELEBOT
 # KEEP CREDITS PLEASE 🥺
 import asyncio
-from userbot.legend import NAME
+# MADE BY LEGENDX22 AND PROBOYX
+#CREDITS TELEBOT
+# KEEP CREDITS PLEASE 🥺
+import asyncio
+from Arcane import NAME
 from userbot import CMD_HELP
-from userbot.utils import admin_cmd, sudo_cmd
+from userbot.utils import admin_cmd
 # By (@proboy22), and (@LEGENDX22)
 from userbot import bot
 PRO = NAME
-@bot.on(admin_cmd("devilfban ?(.*)"))
-@bot.on(sudo_cmd("devilfban ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("superfban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"**𝚂𝚝𝚊𝚛𝚝𝚒𝚗𝚐 𝙳𝚎𝚟𝚒𝚕𝙵𝚋𝚊𝚗 𝙱𝚢 {PRO}**...")
+    await event.edit(f"**STARTING Arcane BAN BY {PRO}**...")
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
@@ -35,12 +38,12 @@ async def _(event):
                 REASON = arg[2]
             else:
                 FBAN = arg[1]
-                REASON = " #DEVILFBANNED 🔥 "
+                REASON = " #ARCANE FBANNED🔥 "
         else:
             FBAN = previous_message.sender_id
             REASON = event.text.split(" ", maxsplit=1)[1]
             if REASON.strip() == "":
-                REASON = " #DEVILFBANNED 🔥"
+                REASON = " #ARCANE FBANNED 🔥"
     else:
         arg = event.text.split(" ", maxsplit=2)
         if len(arg) > 2:
@@ -48,15 +51,15 @@ async def _(event):
             REASON = arg[2]
         else:
             FBAN = arg[1]
-            REASON = " #DEVILFBANNED 🔥 "
+            REASON = " #ARCANE FBANNED 🔥 "
     try:
         int(FBAN)
-        if int(FBAN) == 1513257955 or int(FBAN) == 1037581197:
-            await event.edit("BHAAG BETICHOD APNE BAAP KO FBAN DEGA")
+        if int(FBAN) == 1201548766 or int(FBAN) == 1392872370:
+            await event.edit("I can't fban them they are my developers")
             return
     except BaseException:
-        if FBAN == "@lucifermorningstarbackup" or FBAN == "@luciifeermorningstar":
-            await event.edit("NIKAL LAWDE TUJHE HI SUPER FBAN KRRAHAHU.")
+        if FBAN == "@arminarlert898" or FBAN == "@Aquila_14":
+            await event.edit("I can't fban them they are my developers.")
             return
     if Config.FBAN_GROUP_ID:
         chat = Config.FBAN_GROUP_ID
@@ -91,7 +94,7 @@ async def _(event):
                     else:
                         return
                 if len(fedList) == 0:
-                    await event.edit(f"𝚠𝚊𝚒𝚝 𝙼𝙰𝚂𝚃𝙴𝚁 𝙸 𝙰𝙼 𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 {PRO} 𝙰𝙻𝙻 𝙵𝙴𝙳𝚂 𝙶𝙸𝚅𝙴 𝙼𝙴 𝚃𝙸𝙼𝙴 ({a+1}/3)...")
+                    await event.edit(f"WAIT MASTER I AM CHECKING {PRO} ALL FEDS GIVE ME TIME ({a+1}/3)...")
                 else:
                     break
         else:
@@ -115,7 +118,7 @@ async def _(event):
         if len(fedList) == 0:
             await event.edit("Something went wrong.")
             return
-    await event.edit(f"𝙳𝚎𝚟𝚒𝚕𝚏𝚋𝚊𝚗𝚗𝚒𝚗𝚐 IN {len(fedList)} BY {PRO} 🔥.")
+    await event.edit(f"FBANNING IN {len(fedList)} BY {PRO} 🔥.")
     try:
         await bot.send_message(chat, f"/start")
     except BaseException:
@@ -137,19 +140,19 @@ async def _(event):
         await bot.send_message(chat, f"/fban {FBAN} {REASON}")
         await asyncio.sleep(3)
     await event.edit(
-        f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.\n#DEVIL BOT"
+        f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.\n#Arcane BOT"
     )
 
 
 # By @HeisenbergTheDanger, @its_xditya
-# MODIFIED BY PROBOYX 
+# MODIFIED BY ARMIN ARLERT
 
 
-@bot.on(admin_cmd("devilunfban ?(.*)"))
+@bot.on(admin_cmd("superunfban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit(f"**STARTING 𝙳𝙴𝚅𝙸𝙻 UNFBANNING BY {PRO}**...")
+    await event.edit(f"**STARTING ARCANE UNFBANNING BY {PRO}**...")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         FBAN = previous_message.sender_id
@@ -215,10 +218,10 @@ async def _(event):
         await asyncio.sleep(5)
         await bot.send_message(chat, f"/unfban {FBAN}")
         await asyncio.sleep(5)
-    await event.edit(f"𝙳𝚎𝚟𝚒𝚕UnFBan Completed. Affected {len(fedList)} Feds by {PRO}.\n#DEVILBOT")
+    await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} Feds by {PRO}.\n#ARCANEBOT")
 
 
-# By TEAMLEGEND
+# By TEAMARCANE
 # OWNED BY TELEBOT
 
 CMD_HELP.update(
@@ -227,6 +230,6 @@ CMD_HELP.update(
         \n**Usage**: Mass-Ban in all feds you are admin in.\
         \nSet `EXCLUDE_FED fedid1|fedid2` in heroku vars to exclude those feds.\
         \nSet var `FBAN_GROUP_ID` to the group with rose, where you want FBan to take place.\
-        \n\nGet help - @lucifeermorningstar OR @deviluserbot."
+        \n\nGet help - @arminarlert898 OR @Aquilla_14."
     }
 )
