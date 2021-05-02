@@ -313,7 +313,7 @@ async def _(event):
 
         if response.text.startswith("I can't find that"):
 
-            await event.edit("🤔")
+            await event.edit("")
 
         else:
 
@@ -535,9 +535,9 @@ async def inline_handler(lightning):
 
                 [custom.Button.inline("Help", data="what?")],
 
-                [Button.url("Commands Not Working🤔", "https://t.me/Arcane_Bot_Support")],
+                [Button.url("Commands Not Working 😢", "https://t.me/Arcane_Bot_Support")],
 
-                [Button.url("Help Article 🤔", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [Button.url("Help Article 😢", "https://app.gitbook.com/@poxsisofficial/s/help/")],
 
                 [
 
@@ -545,7 +545,7 @@ async def inline_handler(lightning):
 
                 
 
-                    "Want To Learn CMDS☺️☺️",
+                    "Want To Learn CMDS✨🤖",
 
                     "https://t.me/Arcane_Bot_Support" ,
 
@@ -575,7 +575,7 @@ async def inline_handler(lightning):
 
                     custom.Button.inline(
 
-                        "My Friend🧐🧐",
+                        "My Friend🙃🙃",
 
                         data="he_sucks",
 
@@ -583,7 +583,7 @@ async def inline_handler(lightning):
 
                 ],
 
-                [custom.Button.inline("Requesting⚜️⚜️", data="fck_ask")],
+                [custom.Button.inline("Requesting⚓⚓", data="fck_ask")],
 
                 [
 
@@ -669,7 +669,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     if not lightning.query.user_id == bot.uid:
 
-        how = "Not For  Bitch.😂😂( 😈😈😈😈😈😈)"
+        how = "Not For  Bitch.😂😂( ⚡⚡⚡⚡⚡)"
 
         await lightning.answer(how, cache_time=0, alert=True)
 
@@ -765,9 +765,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
                buttons=[
 
-                [custom.Button.inline("🔱🔱🔱", data="krish")],
+                [custom.Button.inline("⚓⚓⚓", data="krish")],
 
-                [custom.Button.inline("🔥🔥🔥", data="lghtback")]],
+                [custom.Button.inline("✨✨✨", data="lghtback")]],
 
          )
 
@@ -779,9 +779,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
             buttons=[
 
-                [custom.Button.inline("⚜️⚜️⚜️", data="krish")],
+                [custom.Button.inline("✨✨✨", data="krish")],
 
-                [custom.Button.inline("⚜️⚜️⚜️", data="lghtback")],
+                [custom.Button.inline("𝔅𝔞𝔠𝔨", data="lghtback")],
 
             ],
 
@@ -837,7 +837,7 @@ async def what(lightning):
 
     else:
 
-        txt = f"Ohh  You Think That This Is For You?\n Ok I Will Complain To {LIGHTNINGUSER}⚜️⚜️"
+        txt = f"Ohh  You Think That This Is For You?\n Ok I Will Complain To {LIGHTNINGUSER}⚓⚓"
 
         await lightning.answer(txt, alert=True)
 
@@ -1067,7 +1067,7 @@ async def lightning_is_better(lightning):
 
     await asyncio.sleep(2)
 
-    await lightning.edit("Okay Giving You A Chance🧐¨")
+    await lightning.edit("Okay Giving You A Chance😇¨")
 
     await asyncio.sleep(2)
 
@@ -1189,7 +1189,7 @@ async def hmm(lightning):
 
     if lightning.query.user_id == bot.uid:
 
-        text = ".xnxx\n.picx\n.les\n please use in private 😂"
+        text = ".arcane\n.ping\n.alive\n use it to check me⚓"
 
         await lightning.answer(text, alert=True)
 
@@ -1241,7 +1241,7 @@ async def ho(event):
 
     ho = f"""ARCANE_BOT Is Here With Stunning Help !\n
 
-In Case Any Problem @Arcane_Bot_Support \nTottal Plugs( 🧐): {len(CMD_LIST)}"""
+In Case Any Problem @Arcane_Bot_Support \nTottal Plugs(⚓): {len(CMD_LIST)}"""
 
     await event.edit(message=ho, buttons=buttons)
 
