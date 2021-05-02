@@ -22,7 +22,7 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 
 ![ARCANE](https://telegra.ph/file/43a904baa6254a134cb78.jpg)
 
- [![Deploy](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup)
+[Deploy](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup)
  
 ## Mandatory Vars
 
