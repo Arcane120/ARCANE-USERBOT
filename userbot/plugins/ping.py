@@ -1,4 +1,4 @@
- import asyncio
+import asyncio
 from datetime import datetime
 from Arcane.legend import BOT
 from .. import ALIVE_NAME, CMD_HELP
