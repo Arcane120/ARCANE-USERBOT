@@ -296,9 +296,9 @@ async def get_user_from_id(user, event):
 async def gben(userbot):
     Arcane = Arcane = userbot
     i = 0
-    sender = await arcane.get_sender()
+    sender = await Arcane.get_sender()
     me = await userbot.client.get_me()
-    await arcane.edit("`Pʀᴏᴍᴏᴛɪɴɢ...`")
+    await Arcane.edit("`Pʀᴏᴍᴏᴛɪɴɢ...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
 # Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
 # Reserved, Copyrighted by ULTRA-X, only for ULTRA-X UserBot, If found in any other repo, be ready for DMCA
