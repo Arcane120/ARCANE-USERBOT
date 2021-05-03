@@ -58,7 +58,7 @@ async def amireallyalive(alive):
 CMD_HELP.update(
     {
         "arcane": "Plugin : arcane\
-    \n\nSyntax : .arcane\
+    \n\nSyntax : .alive\
     \nFunction : you can set here costom alive pic .set var ALIVE_PHOTTO (Telegraph link)"
     }
 )
