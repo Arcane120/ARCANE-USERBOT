@@ -33,7 +33,7 @@ from . import *
 bot = "@MissRose_bot"
 
 
-@arcane_cmd(pattern="superfban ?(.*)")
+@userbot_cmd(pattern="superfban ?(.*)")
 async def _(event):
     msg = await eor(event, "Starting a Mass-FedBan...")
     fedList = []
