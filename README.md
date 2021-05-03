@@ -30,11 +30,15 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 <a href="https://t.me/Arcane_Bot_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 
- # Credits👀
+ # Credits🤖
 ### • [LEGEND BOT](https://github.com/TeamLEGENDX/LegendBOT)
 
 ### • [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)
 
+# Credits👤
+### • ARMIN ARLERT   »»  <a href="https://github.com/" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-30302f?logo=github" /></a>
+
+### • BLAZE   »»  <a href="https://github.com/bot-support" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-30302f?logo=github" /></a>
 
 ## Mandatory Vars
 
