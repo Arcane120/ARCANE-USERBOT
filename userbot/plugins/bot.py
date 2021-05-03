@@ -70,7 +70,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
 
 @borg.on(admin_cmd(pattern=r"alive"))
 async def hehe(event):
-    alive = requests.get("https://telegra.ph/file/f71f9b1cbd6459391d422.mp4")
+    alive = requests.get("N/A")
     alive.raise_for_status()
     LEGENDX = BytesIO(alive.content)
     LEGENDX.seek(0)
