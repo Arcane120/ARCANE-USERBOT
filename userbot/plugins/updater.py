@@ -142,7 +142,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**✇✇Updating ARCANE_BOTt✇✇** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `✇Master✇` \n**Status** : `✇Updating & Restarting` \n__You Can Do__ `.alive/.arcane` __To Check If I am Alive !__✇")
+    await message.edit("**✇✇Updating ARCANE_BOT✇✇** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `✇Master✇` \n**Status** : `✇Updating & Restarting` \n__You Can Do__ `.alive/.arcane` __To Check If I am Alive !__✇")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
