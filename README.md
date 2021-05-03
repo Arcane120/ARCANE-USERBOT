@@ -24,6 +24,13 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 
 [Deploy](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup)
  
+ 
+ # Credits👀
+### • [LEGEND BOT](https://github.com/TeamLEGENDX/LegendBOT)
+
+### [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)
+
+
 ## Mandatory Vars
 
 - Only two of the environment variables are mandatory.
