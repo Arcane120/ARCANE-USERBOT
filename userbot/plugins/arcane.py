@@ -28,7 +28,7 @@ from platform import python_version, uname
 
 ALIVE_PHOTTO = Config.ALIVE_PHOTTO
 if ALIVE_PHOTTO is None:
-  ALIVE_PHOTTO = "https://telegra.ph/file/1a521001683a360053b32.jpg"
+  ALIVE_PHOTTO = "https://telegra.ph/file/f71f9b1cbd6459391d422.mp4"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙰𝚁𝙲𝙰𝙽𝙴"
