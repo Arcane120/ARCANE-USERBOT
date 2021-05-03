@@ -28,7 +28,7 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
  # Credits👀
 ### • [LEGEND BOT](https://github.com/TeamLEGENDX/LegendBOT)
 
-### [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)
+### • [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)
 
 
 ## Mandatory Vars
