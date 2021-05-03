@@ -42,6 +42,8 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 
 ### • AQUILA   »»  <a href="https://github.com/Aquila-14" alt="AQUILA"> <img src="https://img.shields.io/badge/AQUILA-30302f?logo=github" /></a>
 
+### • MAXIMUS   »»  <a href="https://github.com/MAXIMUSOP" alt="MAXIMUS"> <img src="https://img.shields.io/badge/MAXIMUS-30302f?logo=github" /></a>
+
 ## Mandatory Vars
 
 - Only two of the environment variables are mandatory.
