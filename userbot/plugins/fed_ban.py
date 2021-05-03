@@ -34,7 +34,7 @@ bot = "@MissRose_bot"
 
 
 
-@bot.on(admin_cmd)(pattern="superfban ?(.*)")
+@bot.on(admin_cmd(pattern="superfban ?(.*)")
 async def _(event):
     msg = await eor(event, "Starting a Mass-FedBan...")
     fedList = []
