@@ -20,7 +20,7 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 ## Fᴏʀᴋ Aᴛ Yᴏᴜʀ Oᴡɴ Rɪsᴋ
 ## Iɴsᴛᴀʟʟɪɴɢ
 
-![ARCANE](https://telegra.ph/file/43a904baa6254a134cb78.jpg)
+![ARCANE](https://telegra.ph/file/91d386b1f7db6c76abf80.jpg)
 
 [Deploy](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup)
  
