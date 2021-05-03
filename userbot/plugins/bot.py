@@ -34,7 +34,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
         result = None
         query = event.text
         me = await borg.get_me()
-        if query.startswith("alive") and event.query.user_id == me.id:
+        if query.startswith("arcane") and event.query.user_id == me.id:
             buttons = [
                 [
                     Button.url("✨𝚁𝙴𝙿𝙾✨", "https://github.com/Arcane120/ARCANE-USERBOT"),
@@ -68,7 +68,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
             await event.answer([result] if result else None)
 
 
-@borg.on(admin_cmd(pattern=r"alive"))
+@borg.on(admin_cmd(pattern=r"arcane"))
 async def hehe(event):
     alive = requests.get("N/A")
     alive.raise_for_status()
@@ -84,7 +84,7 @@ async def hehe(event):
 from userbot import bot
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="alive"))
+@bot.on(admin_cmd(outgoing=True, pattern="arcane"))
 async def repo(event):
     if event.fwd_from:
         return
