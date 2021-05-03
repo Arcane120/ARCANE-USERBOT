@@ -25,7 +25,7 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 [Deploy](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup)
  
  
- ## Officia✨ Support ⚓
+ ## Official✨ Support⚓
 <a href="https://t.me/Arcane_Bot_Updates"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/Arcane_Bot_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
