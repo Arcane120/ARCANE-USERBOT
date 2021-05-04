@@ -10,13 +10,13 @@ from telethon.utils import pack_bot_file_id
 from userbot.uniborgConfig import Config
 from ARCANE import xbot, devs as DEVS
 from userbot import bot
-from userbot.plugins.sql_helper.blacklist_ass import (
+from userbot.plugins.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
 
-from userbot.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
+from userbot.plugins.sql_helper.botusers_sql import add_me_in_db, his_userid
 from userbot.plugins.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
