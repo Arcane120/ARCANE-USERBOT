@@ -1,4 +1,4 @@
-from userbot import xbot
+from ARCANE import xbot
 from google_trans_new import google_translator
 import requests
 from PyDictionary import PyDictionary
