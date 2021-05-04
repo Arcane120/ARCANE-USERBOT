@@ -2,22 +2,22 @@ import asyncio
 import io
 import os
 import re
-from ULTRAX import PHOTO, ID as id
+from ARCANE import PHOTO, ID as id
 from telethon import Button, custom, events, functions
 import telethon
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
-from ULTRA.uniborgConfig import Config
-from ULTRAX import xbot, devs as DEVS
-from ULTRA import bot
-from ULTRA.plugins.sql_helper.blacklist_ass import (
+from userbot.uniborgConfig import Config
+from ARCANE import xbot, devs as DEVS
+from userbot import bot
+from userbot.plugins.sql_helper.blacklist_ass import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
 
-from ULTRA.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
-from ULTRA.plugins.sql_helper.idadder_sql import (
+from userbot.plugins.sql_helper.bot_users_sql import add_me_in_db, his_userid
+from userbot.plugins.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,
