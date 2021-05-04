@@ -1,5 +1,5 @@
 from telethon.utils import pack_bot_file_id
-from userbot import xbot, devs as DEVS
+from ARCANE import xbot, devs as DEVS
 from telethon import events
 from userbot import bot
 
