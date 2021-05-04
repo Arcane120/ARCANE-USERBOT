@@ -2,7 +2,7 @@
 # modify by madboy482 and alain_champion
 
 from userbot import bot
-from userbot import xbot, ID
+from ARCANE import xbot, ID
 import heroku3
 from telethon import events
 from userbot import StartTime
@@ -11,7 +11,7 @@ import datetime
 from . import *
 from telethon import events, Button, custom
 import re, os
-from userbot import PHOTO, xbot, BOT, VERSION
+from ARCANE import PHOTO, xbot, BOT, VERSION
 from userbot import bot
 @xbot.on(events.NewMessage(pattern=("/alive")))
 async def awake(event):
