@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 """ Userbot module for managing events.
- One of the main components of the userbot. """
+ One of the main components of the ARCANE BOT. """
 
 import sys
 from asyncio import create_subprocess_shell as asyncsubshell
@@ -86,7 +86,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**USERBOT ERROR REPORT**\n"
-                    link = "[ARCANE USERBOT Official Chat](https://t.me/Arcane_Bot_Support)"
+                    link = "[ARCANE BOT SUPPORT](https://t.me/Arcane_Bot_Support)"
                     text += "If you want to, you can report it"
                     text += f"- just forward this message to {link}.\n"
                     text += "Nothing is logged except the fact of error and date\n"
@@ -129,8 +129,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.client.respond(
-                            "`Sorry, my userbot has crashed😔, check logs for more info.\
-                        \nThe error logs are stored in the userbot's log chat.`"
+                            "`Sorry, my ARCANE BOT has crashed😔, check logs for more info.\
+                        \nThe error logs are stored in the ARCANE's log chat.`"
                         )
 
                     await check.client.send_file(send_to,
@@ -146,3 +146,37 @@ def register(**args):
         return wrapper
 
     return decorator
+
+def get_readable_time(seconds: int) -> str:
+    count = 0
+    ping_time = ""
+    time_list = []
+    time_suffix_list = ["s", "m", "h", "days"]
+
+    while count < 4:
+        count += 1
+        if count < 3:
+            remainder, result = divmod(seconds, 60)
+        else:
+            remainder, result = divmod(seconds, 24)
+        if seconds == 0 and remainder == 0:
+            break
+        time_list.append(int(result))
+        seconds = int(remainder)
+
+    for x in range(len(time_list)):
+        time_list[x] = str(time_list[x]) + time_suffix_list[x]
+    if len(time_list) == 4:
+        ping_time += time_list.pop() + ", "
+
+    time_list.reverse()
+    ping_time += ":".join(time_list)
+
+    return ping_time
+
+import time
+import datetime
+from userbot import StartTime
+def upt():
+   uptm = get_readable_time((time.time() - StartTime))
+
