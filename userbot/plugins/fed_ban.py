@@ -4,10 +4,10 @@ from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.users import GetFullUserRequest
 
-from ..utils import admin_cmd , sudo_cmd
+from userbot.utils import admin_cmd , sudo_cmd
 from userbot import bot
-
-naam = str(ALIVE_NAME)
+from userbot.legend import NAME
+naam = NAME
 
 bots = "@MissRose_bot"
 
