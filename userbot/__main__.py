@@ -1,12 +1,12 @@
 import os
 try:
-  from userbot import id, ID, devs, rd, wt
+  from LEGENDX import id, ID, devs, rd, wt
 except:
   os.system("pip install Aracne==0.0.21")
-  from userbot import id, ID, devs
+  from LEGENDX import id, ID, devs
 finally:
   print ("ARCANE USERBOT IS STARTING WITH TELETHON") 
-from userbot import xbot
+from ARCANE import xbot
 from userbot import bot, CMD_HELP
 from sys import argv
 os.system("pip install telethon==1.19.0")
