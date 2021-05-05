@@ -1,5 +1,3 @@
-# credits to @mrconfused 
-
 import asyncio
 import datetime
 import importlib
@@ -7,6 +5,7 @@ import inspect
 import logging
 import math
 import os
+from . import SUDO_USERS
 import re
 import sys
 import time
@@ -21,6 +20,7 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from var import Var
 
 from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
+from ARCANE import xbot
 from userbot.helpers.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
@@ -32,11 +32,50 @@ else:
 
 
 
+
+def load_extra(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import ULTRA.utils
+
+        path = Path(f"ULTRA_PLUGS/{shortname}.py")
+        name = "ULTRA_PLUGS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        LOGS.info("Successfully imported " + shortname)
+    else:
+        import ULTRA.utils
+
+        path = Path(f"ULTRA_PLUGS/{shortname}.py")
+        name = "ULTRA_PLUGS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.bot = bot
+        mod.tgbot = bot.tgbot
+        mod.Var = Var
+        mod.xbot = xbot
+        mod.command = command
+        mod.logger = logging.getLogger(shortname)
+        # support for uniborg
+        sys.modules["uniborg.util"] = userbot.utils
+        mod.Config = Config
+        mod.borg = bot
+        mod.edit_or_reply = edit_or_reply
+        # support for paperplaneextended
+        sys.modules["ULTRA.events"] = userbot.utils
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["userbot.plugins." + shortname] = mod
+        LOGS.info("Successfully imported " + shortname)
+
+
 def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import userbot.utils
+        import ULTRA.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
@@ -45,7 +84,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import userbot.utils
+        import ULTRA.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
@@ -54,6 +93,44 @@ def load_module(shortname):
         mod.bot = bot
         mod.tgbot = bot.tgbot
         mod.Var = Var
+        mod.xbot = xbot
+        mod.command = command
+        mod.logger = logging.getLogger(shortname)
+        # support for uniborg
+        sys.modules["uniborg.util"] = ULTRA.utils
+        mod.Config = Config
+        mod.borg = bot
+        mod.edit_or_reply = edit_or_reply
+        # support for paperplaneextended
+        sys.modules["ULTRA.events"] = ULTRA.utils
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["ULTRA.plugins." + shortname] = mod
+        LOGS.info("Successfully imported " + shortname)
+
+def load_pro(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import ULTRA.utils
+
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        LOGS.info("Successfully imported " + shortname)
+    else:
+        import ULTRA.utils
+
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.bot = bot
+        mod.tgbot = bot.tgbot
+        mod.Var = Var
+        mod.xbot = xbot
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
@@ -65,7 +142,7 @@ def load_module(shortname):
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["userbot.plugins." + shortname] = mod
+        sys.modules["userbot.plugins.assistant." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -90,6 +167,7 @@ def remove_plugin(shortname):
 def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
+    global SUDO_USERS
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
     file_test = file_test.stem.replace(".py", "")
@@ -128,7 +206,7 @@ def admin_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(Config.SUDO_USERS)
+        args["from_users"] = list(SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
@@ -156,6 +234,7 @@ def admin_cmd(pattern=None, command=None, **args):
 def sudo_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
+    global SUDO_USERS
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
     file_test = file_test.stem.replace(".py", "")
@@ -193,7 +272,7 @@ def sudo_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(Config.SUDO_USERS)
+        args["from_users"] = list(SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
@@ -219,6 +298,19 @@ async def edit_or_reply(event, text, parse_mode=None, link_preview=None):
     link_preview = link_preview or False
     parse_mode = parse_mode or "md"
     if event.sender_id in Config.SUDO_USERS:
+        reply_to = await event.get_reply_message()
+        if reply_to:
+            return await reply_to.reply(
+                text, parse_mode=parse_mode, link_preview=link_preview
+            )
+        return await event.reply(text, parse_mode=parse_mode, link_preview=link_preview)
+    return await event.edit(text, parse_mode=parse_mode, link_preview=link_preview)
+
+async def eor(event, text, parse_mode=None, link_preview=None):
+    link_preview = link_preview or False
+    global SUDO_USERS
+    parse_mode = parse_mode or "md"
+    if event.sender_id in SUDO_USERS:
         reply_to = await event.get_reply_message()
         if reply_to:
             return await reply_to.reply(
@@ -258,7 +350,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/Arcane_Bot_Support)"
+            link = "[here](https://t.me/sn12384)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -285,7 +377,7 @@ def errors_handler(func):
 
             ftext += "\n\n\nLast 5 commits:\n"
 
-            process = await asyncio.create_subprocess_shell(
+   process = await asyncio.create_subprocess_shell(
                 command,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE)
@@ -555,4 +647,16 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-    # print("Assistant Has imported " + shortname)
+    # print("Assistant Has imported " + shortname)     
+                
+
+
+            
+
+
+
+        
+            
+        
+     
+    
