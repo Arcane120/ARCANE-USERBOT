@@ -298,7 +298,7 @@ async def _(event):
         return
     await event.edit("Starting Superfban By my master")
 
- ...")
+
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
