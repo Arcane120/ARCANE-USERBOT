@@ -99,7 +99,7 @@ async def legend():
 
 `☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
 
-**Dɪɴɢ Dᴏɴɢ...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **UʟᴛʀᴀX Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
+**Ping Pong...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **ARCANE USERBOT Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
 
 **Pɪɴɢ Pᴏɴɢ...**
 
@@ -108,13 +108,13 @@ async def legend():
 **➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@Arcane_Bot_Support**
 **➥ Cʜᴀɴɴᴇʟ** `➪` **@ARCANE_USERBOT**
 
-**Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
+**Cʜᴇᴄᴋ MY Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
 """
   if ONLINE_ALERT:
     try:
       PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
       
-      await xbot.send_message(bot.me.id, LEGENDX, buttons=PROBOYX)
+      await xbot.send_message(bot.me.id, Arcane, buttons=PROBOYX)
     except:
        pass
   else:
