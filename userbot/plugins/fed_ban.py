@@ -296,7 +296,9 @@ EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("(test)Starting Superfban By Modi Ji ...")
+    await event.edit("Starting Superfban By my master")
+
+ ...")
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
