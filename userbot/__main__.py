@@ -105,8 +105,8 @@ async def legend():
 
 **➥ Mᴀsᴛᴇʀ** `➪` **@{legend.username}**
 **➥ Assɪsᴛᴀɴᴛ** `➪` **@{pro.username}**
-**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@Ul**
-**➥ Cʜᴀɴɴᴇʟ** `➪` **@UltraX_SupporT**
+**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@Arcane_Bot_Support**
+**➥ Cʜᴀɴɴᴇʟ** `➪` **@ARCANE_USERBOT**
 
 **Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
 """
