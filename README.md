@@ -35,14 +35,16 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 
 ### • [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)
 
+### • [ULTRA X](https://github.com/ULTRA-OP/ULTRA-X)
+
 # Credits👤
 ### • ARMIN ARLERT   »»  <a href="https://github.com/" alt="ARMIN"> <img src="https://img.shields.io/badge/ARMIN-30302f?logo=github" /></a>
 
-### • BLAZE   »»  <a href="https://github.com/bot-support" alt="BLAZE"> <img src="https://img.shields.io/badge/BLAZE-30302f?logo=github" /></a>
+### • AQUILA   »»  <a href="https://github.com/Aquila-14" alt="AQUILA"> <img src="https://img.shields.io/badge/BLAZE-30302f?logo=github" /></a>
 
-### • AQUILA   »»  <a href="https://github.com/Aquila-14" alt="AQUILA"> <img src="https://img.shields.io/badge/AQUILA-30302f?logo=github" /></a>
+### • MAXIMUS   »»  <a href="https://github.com/MAXIMUSOP" alt="MAXIMUS"> <img src="https://img.shields.io/badge/AQUILA-30302f?logo=github" /></a>
 
-### • MAXIMUS   »»  <a href="https://github.com/MAXIMUSOP" alt="MAXIMUS"> <img src="https://img.shields.io/badge/MAXIMUS-30302f?logo=github" /></a>
+### • BLAZE   »»  <a href="https://github.com/bot-support" alt="BLAZE"> <img src="https://img.shields.io/badge/MAXIMUS-30302f?logo=github" /></a>
 
 ## Mandatory Vars
 
