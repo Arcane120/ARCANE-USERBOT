@@ -120,7 +120,7 @@ async def legend():
   else:
       print("YOUR BOT DEPLOYED SUCCESSFULLY")
 
-bot.loop.run_until_complete(legend())
+bot.loop.run_until_complete(legend.username())
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
     
