@@ -46,7 +46,7 @@ def load_extra(shortname):
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"ULTRA_PLUGS/{shortname}.py")
         name = "ULTRA_PLUGS.{}".format(shortname)
@@ -75,7 +75,7 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
@@ -84,7 +84,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
         name = "userbot.plugins.{}".format(shortname)
@@ -112,7 +112,7 @@ def load_pro(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"userbot/plugins/assistant/{shortname}.py")
         name = "userbot.plugins.assistant.{}".format(shortname)
@@ -121,7 +121,7 @@ def load_pro(shortname):
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"userbot/plugins/assistant/{shortname}.py")
         name = "userbot.plugins.assistant.{}".format(shortname)
