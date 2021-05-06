@@ -38,7 +38,7 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 ### • [ULTRA X](https://github.com/ULTRA-OP/ULTRA-X)
 
 # Credits👤
-### • ARMIN ARLERT   »»  <a href="https://github.com/" alt="ARMIN"> <img src="https://img.shields.io/badge/ARMIN-30302f?logo=github" /></a>
+### • ARMIN ARLERT   »»  <a href="https://github.com/ryukmadox" alt="ARMIN"> <img src="https://img.shields.io/badge/ARMIN-30302f?logo=github" /></a>
 
 ### • AQUILA   »»  <a href="https://github.com/Aquila-14" alt="AQUILA"> <img src="https://img.shields.io/badge/AQUILA-30302f?logo=github" /></a>
 
