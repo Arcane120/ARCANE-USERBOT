@@ -103,7 +103,7 @@ async def legend():
 
 **Pɪɴɢ Pᴏɴɢ...**
 
-**➥ Mᴀsᴛᴇʀ** `➪` **@{legend.username}**
+**➥ Mᴀsᴛᴇʀ** `➪` **@{legend}**
 **➥ Assɪsᴛᴀɴᴛ** `➪` **@{pro.username}**
 **➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@Arcane_Bot_Support**
 **➥ Cʜᴀɴɴᴇʟ** `➪` **@ARCANE_USERBOT**
