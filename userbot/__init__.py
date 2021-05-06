@@ -30,7 +30,7 @@ def HELP(**LEGENDX):
 	see = ARCANE.get("NAME", None)
 	helper = ARCANE.get("HELP", None)
 	if see is None:
-		ARCANE"NAME"] = __name__
+		ARCANE["NAME"] = __name__
 		CMD_HELP.update({see: helper})
 	elif helper is None:
 		ARCANE[
