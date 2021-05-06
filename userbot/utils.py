@@ -97,12 +97,12 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = ULTRA.utils
+        sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["ULTRA.events"] = ULTRA.utils
+        sys.modules["ULTRA.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["ULTRA.plugins." + shortname] = mod
