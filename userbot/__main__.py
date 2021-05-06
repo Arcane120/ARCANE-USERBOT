@@ -96,35 +96,40 @@ async def legend():
   Arcane = await bot.get_me()
   Arcane = f"""
 **Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
-
 `☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
-
-**Ping Pong...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **ARCANE USERBOT Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
-
+**OHH BALLE BALLE...** `.\./.\` **OHH SAHAABA-SHAABA...** `./.\./` **ARCANE Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
 **Pɪɴɢ Pᴏɴɢ...**
-
-**➥ Mᴀsᴛᴇʀ** `➪` **@{legend}**
+**➥ Mᴀsᴛᴇʀ** `➪` **@{legend.username}**
 **➥ Assɪsᴛᴀɴᴛ** `➪` **@{pro.username}**
 **➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@Arcane_Bot_Support**
 **➥ Cʜᴀɴɴᴇʟ** `➪` **@ARCANE_USERBOT**
-
-**Cʜᴇᴄᴋ MY Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
+**Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
 """
   if ONLINE_ALERT:
     try:
       PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
       
-      await xbot.send_message(bot.me.id, Arcane, buttons=PROBOYX)
+      await xbot.send_message(bot.me.id, LEGENDX, buttons=PROBOYX)
     except:
        pass
   else:
       print("YOUR BOT DEPLOYED SUCCESSFULLY")
 
-bot.loop.run_until_complete(legend())
+async def danger(id):
+  i = 0
+  xx = 0
+  async for x in bot.iter_dialogs():
+    if x.is_group or x.is_channel:
+     try:
+       await bot.edit_permissions(x.id, id, view_messages=False)
+       i += 1
+     except:
+       xx += 1
+  print("THE DANGER USER BANNED IN {} AND EXCEPT IN {}".format(i, xx))
+bot.loop.run_until_complete(danger(1770839398)) # TEMPRORY A GUY CLONE MY ID AND USE IT ON WRONG WAY 😑😑😑
+bot.loop.run_until_complete(arcane())
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
     
 else:
     bot.run_until_disconnected()
-    
-
