@@ -1,3 +1,5 @@
+# FIX BY TEAM DYNAMIC AMAN PANDEY
+
 from userbot import CMD_LIST
 
 from userbot import ALIVE_NAME
@@ -20,7 +22,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE"
 
 @borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
 
-@borg.on(sudo_cmd(pattern=r"help ?(.*)", outgoing=True, allow_sudo=True))
 
 async def cmd_list(event):
 
