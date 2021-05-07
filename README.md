@@ -40,6 +40,8 @@ This is a USERBOT made for telegram. We made this userbot  with help of  other U
 # Credits👤
 ### • ARMIN ARLERT   »»  <a href="https://github.com/ryukmadox" alt="ARMIN"> <img src="https://img.shields.io/badge/ARMIN-30302f?logo=github" /></a>
 
+### • AMAN   »»  <a href="https://github.com/amanpandey7647" alt="AMAN"> <img src="https://img.shields.io/badge/AMAN-30302f?logo=github" /></a>
+
 ### • AQUILA   »»  <a href="https://github.com/Aquila-14" alt="AQUILA"> <img src="https://img.shields.io/badge/AQUILA-30302f?logo=github" /></a>
 
 ### • MAXIMUS   »»  <a href="https://github.com/MAXIMUSOP" alt="MAXIMUS"> <img src="https://img.shields.io/badge/MAXIMUS-30302f?logo=github" /></a>
