@@ -87,7 +87,7 @@ def load_module(shortname):
         import userbot.utils
 
         path = Path(f"userbot/plugins/{shortname}.py")
-        name = "ULTRA.plugins.{}".format(shortname)
+        name = "userbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -97,34 +97,34 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = ULTRA.utils
+        sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["ULTRA.events"] = ULTRA.utils
+        sys.modules["userbot.events"] = Userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["ULTRA.plugins." + shortname] = mod
+        sys.modules["userbot.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 def load_pro(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import ULTRA.utils
+        import userbot.utils
 
-        path = Path(f"ULTRA/plugins/assistant/{shortname}.py")
-        name = "ULTRA.plugins.assistant.{}".format(shortname)
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
-        path = Path(f"ULTRA/plugins/assistant/{shortname}.py")
-        name = "ULTRA.plugins.assistant.{}".format(shortname)
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -134,15 +134,15 @@ def load_pro(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = ULTRA.utils
+        sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["ULTRA.events"] = ULTRA.utils
+        sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["ULTRA.plugins.assistant." + shortname] = mod
+        sys.modules["userbot.plugins.assistant." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -154,7 +154,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except BaseException:
-            name = f"ULTRA.plugins.{shortname}"
+            name = f"userbot.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -628,8 +628,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"ULTRA/plugins/assistant/{shortname}.py")
-        name = "ULTRA.plugins.assistant.{}".format(shortname)
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -640,11 +640,11 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"ULTRA/plugins/assistant/{shortname}.py")
-        name = "ULTRA.plugins.assistant.{}".format(shortname)
+        path = Path(f"userbot/plugins/assistant/{shortname}.py")
+        name = "userbot.plugins.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["ULTRA.plugins.assistant" + shortname] = mod
+        sys.modules["userbot.plugins.assistant" + shortname] = mod
     # print("Assistant Has imported " + shortname)
