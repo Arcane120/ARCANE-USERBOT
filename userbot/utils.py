@@ -19,13 +19,13 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
 from var import Var
 
-from ULTRA import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from ULTRAX import xbot
-from ULTRA.helpers.exceptions import CancelProcess
+from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
+from Arcane import xbot
+from userbot.helpers.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
-    from ULTRA.uniborgConfig import Config
+    from userbot.uniborgConfig import Config
 else:
     if os.path.exists("config.py"):
         from config import Development as Config
@@ -37,16 +37,16 @@ def load_extra(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import ULTRA.utils
+        import userbot.utils
 
-        path = Path(f"ULTRA_PLUGS/{shortname}.py")
-        name = "ULTRA_PLUGS.{}".format(shortname)
+        path = Path(f"ARCANE_PLUGS/{shortname}.py")
+        name = "ARCANE_PLUGS.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
         path = Path(f"ULTRA_PLUGS/{shortname}.py")
         name = "ULTRA_PLUGS.{}".format(shortname)
@@ -59,15 +59,15 @@ def load_extra(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = ULTRA.utils
+        sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["ULTRA.events"] = ULTRA.utils
+        sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["ULTRA.plugins." + shortname] = mod
+        sys.modules["userbot.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -75,18 +75,18 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import ULTRA.utils
+        import userbot.utils
 
-        path = Path(f"ULTRA/plugins/{shortname}.py")
-        name = "ULTRA.plugins.{}".format(shortname)
+        path = Path(f"userbot/plugins/{shortname}.py")
+        name = "userbot.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
-        import ULTRA.utils
+        import userbot.utils
 
-        path = Path(f"ULTRA/plugins/{shortname}.py")
+        path = Path(f"userbot/plugins/{shortname}.py")
         name = "ULTRA.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
