@@ -6,7 +6,7 @@ except:
   from LEGENDX import id, ID, devs
 finally:
   print ("ARCANE USERBOT IS STARTING WITH TELETHON") 
-from ARCANE import xbot
+from Arcane import xbot
 from userbot import bot, CMD_HELP
 from sys import argv
 os.system("pip install telethon==1.19.0")
