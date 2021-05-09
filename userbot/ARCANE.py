@@ -1,4 +1,4 @@
-#Copyright 2021-2022 Ultra X Bot
+haiCopyright 2021-2022 Ultra X Bot
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -37,9 +37,9 @@ REPO = "[υℓтяα χ вσт](https://github.com/Arcane120/ARCANE-USERBOT)"
 global ghanti
 X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
-GROUP = "[SUPPORT GROUP](https://t.me/Arcane_Support_Group)"
+GROUP = "[SUPPORT GROUP](https://t.me/Arcane_Bot_Support)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
 ALIVE = "вσт ιѕ ση 🔥 ƒιяє 🔥" 
-OP = " нєℓℓσ мαѕтєя му ηαмє ιѕ υℓтяα χ вσт ι αм тнє вєѕт υѕєявσт 💝"
+OP = " нєℓℓσ мαѕтєя му ηαмє ιѕ ARCANE вσт ι αм тнє вєѕт υѕєявσт 💝"
 EMOJI = "🔥"
