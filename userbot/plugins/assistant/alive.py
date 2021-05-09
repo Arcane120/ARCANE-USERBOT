@@ -2,7 +2,7 @@
 # modify by madboy482 and alain_champion
 
 from userbot import bot
-from Arcane import xbot, ID
+from ARCANE import xbot, ID
 import heroku3
 from telethon import events
 from userbot import StartTime
