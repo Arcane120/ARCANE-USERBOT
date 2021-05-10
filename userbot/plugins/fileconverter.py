@@ -67,7 +67,6 @@ thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "thumb_image.jpg"
 
 
 @borg.on(admin_cmd(pattern="stoi"))
-@borg.on(sudo_cmd(pattern="stoi", allow_sudo=True))
 async def danish(hehe):
     if hehe.fwd_from:
         return
@@ -122,7 +121,6 @@ async def danish(hehe):
   #hehe
   
 @borg.on(admin_cmd(pattern="itos"))
-@borg.on(sudo_cmd(pattern="itos", allow_sudo=True))
 async def teamcobra(hehe):
     if hehe.fwd_from:
         return
