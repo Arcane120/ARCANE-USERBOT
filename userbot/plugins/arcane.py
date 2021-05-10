@@ -38,7 +38,7 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += f"꧁ 𝙼𝚈 𝙱𝙾𝚂𝚂 ꧂: [{DEFAULTUSER}](tg://user?id={tag})\n\n"
    ALIVE_MESSAGE += "☯︎ 𝙶𝚁𝙾𝚄𝙿 ☯︎ : [SUPPORT](https://t.me/Arcane_Bot_Support)\n\n"
    ALIVE_MESSAGE += f"༄ [𝙳𝙴𝙿𝙻𝙾𝚈](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FArcane120%2Heroku-Setup&template=https%3A%2F%2Fgithub.com%2FArcane120%2FHeroku-Setup) ༄ 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙾𝙿 ❄︎[{BOT}](https://github.com/Arcane120/ARCANE-USERBOT)  ❄︎\n"   
-   await arcane.delete() 
+   await awake.delete() 
    await borg.send_file(arcane.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
 
 CMD_HELP.update(
