@@ -1,5 +1,4 @@
-# credits to @mrconfused 
-
+# CREDITS AMAN PANDEY
 import asyncio
 import datetime
 import importlib
@@ -21,7 +20,7 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from var import Var
 
 from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from userbot.helpers.exceptions import CancelProcess
+from userbot.helper.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
@@ -30,6 +29,42 @@ else:
     if os.path.exists("config.py"):
         from config import Development as Config
 
+def load_extra(shortname):
+    if shortname.startswith("__"):
+        pass
+    elif shortname.endswith("_"):
+        import userbot.utils
+
+        path = Path(f"userbot_PLUGINS/{shortname}.py")
+        name = "userbot_PLUGINS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        LOGS.info("Successfully imported " + shortname)
+    else:
+        import userbot.utils
+
+        path = Path(f"userbot_PLUGINS/{shortname}.py")
+        name = "userbot_PLUGINS.{}".format(shortname)
+        spec = importlib.util.spec_from_file_location(name, path)
+        mod = importlib.util.module_from_spec(spec)
+        mod.bot = bot
+        mod.tgbot = bot.tgbot
+        mod.Var = Var
+        mod.xbot = xbot
+        mod.command = command
+        mod.logger = logging.getLogger(shortname)
+        # support for uniborg
+        sys.modules["uniborg.util"] = userbot.utils
+        mod.Config = Config
+        mod.borg = bot
+        mod.edit_or_reply = edit_or_reply
+        # support for paperplaneextended
+        sys.modules["userbot.events"] = userbot.utils
+        spec.loader.exec_module(mod)
+        # for imports
+        sys.modules["userbot.plugins." + shortname] = mod
+        LOGS.info("Successfully imported " + shortname)
 
 
 def load_module(shortname):
@@ -54,6 +89,7 @@ def load_module(shortname):
         mod.bot = bot
         mod.tgbot = bot.tgbot
         mod.Var = Var
+        mod.xbot = xbot
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
@@ -67,7 +103,6 @@ def load_module(shortname):
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
-
 
 def remove_plugin(shortname):
     try:
@@ -258,7 +293,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/Arcane_Bot_Support)"
+            link = "[here](https://t.me/deviluserbot)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -353,7 +388,7 @@ def human_to_bytes(size: str) -> int:
         "T": 2 ** 40,
         "TB": 2 ** 40,
     }
-    
+
     size = size.upper()
     if not re.match(r" ", size):
         size = re.sub(r"([KMGT])", r" \1", size)
