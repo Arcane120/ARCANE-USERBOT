@@ -4,8 +4,8 @@ from userbot import CMD_HELP
 from userbot.utils import admin_cmd, sudo_cmd
 
 #@command(outgoing=True, pattern=r"^.gmute ?(\d+)?")
-@borg.on(admin_cmd(pattern=r"gmute ?(\d+)?"))
-@borg.on(sudo_cmd("gmute ?(.*)", allow_sudo=True))
+@borg.on(admin_cmd(pattern=r"gmute"))
+@borg.on(sudo_cmd(pattern="gmute ?(.*)", allow_sudo=True))
 async def startgmute(event):
     private = False
     if event.fwd_from:
@@ -35,7 +35,7 @@ async def startgmute(event):
         await event.edit("Son Can't speek now.... Filled His Mouth With Cum😉")
 
 #@command(outgoing=True, pattern=r"^.ungmute ?(\d+)?")
-@borg.on(admin_cmd(pattern=r"ungmute ?(\d+)?"))
+@borg.on(admin_cmd(pattern=r"ungmute"))
 @borg.on(sudo_cmd("ungmute ?(.*)", allow_sudo=True))
 async def endgmute(event):
     private = False
