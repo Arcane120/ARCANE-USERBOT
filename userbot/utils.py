@@ -88,7 +88,6 @@ def load_module(shortname):
         mod.bot = bot
         mod.tgbot = bot.tgbot
         mod.Var = Var
-        mod.xbot = xbot
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
