@@ -101,7 +101,7 @@ def load_module(shortname):
         mod.borg = bot
         mod.edit_or_reply = edit_or_reply
         # support for paperplaneextended
-        sys.modules["userbot.events"] = Userbot.utils
+        sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
