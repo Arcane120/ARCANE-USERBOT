@@ -1,4 +1,13 @@
-# FIX BY TEAM DYNAMIC. Aman Pandey
+"""
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+MADE BY @LEGENDX22 dont kang this plugin
+CREDITS = @LEGENDX22 @PROBOYX @alain_champion
+Special thanks @alain_champion for this modified version
+if you kang then keep credits
+"""
 import os
 import time
 import asyncio
@@ -24,8 +33,10 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙰𝚁𝙲𝙰𝙽𝙴"
 
 global ghanti
         
-
-@borg.on(admin_cmd(pattern=r"arcane")) 
+#make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
+#@command(outgoing=True, pattern="^.awake$")
+@borg.on(admin_cmd(pattern=r"awake")) 
+@borg.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
 async def amireallyalive(arcane):
    """ For .arcane command, check if the bot is running or not.  """
    tag = borg.uid
