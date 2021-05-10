@@ -17,7 +17,6 @@ mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 
 @bot.on(admin_cmd("ascii ?(.*)"))
-@bot.on(sudo_cmd(pattern="ascii ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -59,7 +58,6 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="line ?(.*)"))
-@bot.on(sudo_cmd(pattern="line ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
