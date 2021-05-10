@@ -20,7 +20,6 @@ from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 from var import Var
 
 from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, bot
-from userbot.helper.exceptions import CancelProcess
 
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
