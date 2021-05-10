@@ -33,8 +33,8 @@ from userbot import CMD_HELP
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-@borg.on(admin_cmd(pattern=r"frybot"))
-@borg.on(sudo_cmd(pattern="frybot ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"frybot"))
+@bot.on(sudo_cmd(pattern="frybot ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
