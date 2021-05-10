@@ -1,3 +1,4 @@
+# CREDITS AMAN PANDEY MADE FOR DYNAMIC USERBOT. DONT KANG Without credits
 import asyncio
 import datetime
 import importlib
@@ -29,17 +30,14 @@ else:
     if os.path.exists("config.py"):
         from config import Development as Config
 
-
-
-
 def load_extra(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
         import userbot.utils
 
-        path = Path(f"ARCANE_PLUGS/{shortname}.py")
-        name = "ARCANE_PLUGS.{}".format(shortname)
+        path = Path(f"userbot_PLUGINS/{shortname}.py")
+        name = "userbot_PLUGINS.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -47,8 +45,8 @@ def load_extra(shortname):
     else:
         import userbot.utils
 
-        path = Path(f"ARCANE_PLUGS/{shortname}.py")
-        name = "ARCANE_PLUGS.{}".format(shortname)
+        path = Path(f"userbot_PLUGINS/{shortname}.py")
+        name = "userbot_PLUGINS.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -107,44 +105,6 @@ def load_module(shortname):
         sys.modules["userbot.plugins." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
-def load_pro(shortname):
-    if shortname.startswith("__"):
-        pass
-    elif shortname.endswith("_"):
-        import userbot.utils
-
-        path = Path(f"userbot/plugins/assistant/{shortname}.py")
-        name = "userbot.plugins.assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        LOGS.info("Successfully imported " + shortname)
-    else:
-        import userbot.utils
-
-        path = Path(f"userbot/plugins/assistant/{shortname}.py")
-        name = "userbot.plugins.assistant.{}".format(shortname)
-        spec = importlib.util.spec_from_file_location(name, path)
-        mod = importlib.util.module_from_spec(spec)
-        mod.bot = bot
-        mod.tgbot = bot.tgbot
-        mod.Var = Var
-        mod.xbot = xbot
-        mod.command = command
-        mod.logger = logging.getLogger(shortname)
-        # support for uniborg
-        sys.modules["uniborg.util"] = userbot.utils
-        mod.Config = Config
-        mod.borg = bot
-        mod.edit_or_reply = edit_or_reply
-        # support for paperplaneextended
-        sys.modules["userbot.events"] = userbot.utils
-        spec.loader.exec_module(mod)
-        # for imports
-        sys.modules["userbot.plugins.assistant." + shortname] = mod
-        LOGS.info("Successfully imported " + shortname)
-
-
 def remove_plugin(shortname):
     try:
         try:
@@ -166,7 +126,6 @@ def remove_plugin(shortname):
 def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
-    global SUDO_USERS
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
     file_test = file_test.stem.replace(".py", "")
@@ -205,7 +164,7 @@ def admin_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(SUDO_USERS)
+        args["from_users"] = list(Config.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
@@ -233,7 +192,6 @@ def admin_cmd(pattern=None, command=None, **args):
 def sudo_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
-    global SUDO_USERS
     previous_stack_frame = stack[1]
     file_test = Path(previous_stack_frame.filename)
     file_test = file_test.stem.replace(".py", "")
@@ -271,7 +229,7 @@ def sudo_cmd(pattern=None, command=None, **args):
     args["outgoing"] = True
     # should this command be available for other users?
     if allow_sudo:
-        args["from_users"] = list(SUDO_USERS)
+        args["from_users"] = list(Config.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
@@ -297,19 +255,6 @@ async def edit_or_reply(event, text, parse_mode=None, link_preview=None):
     link_preview = link_preview or False
     parse_mode = parse_mode or "md"
     if event.sender_id in Config.SUDO_USERS:
-        reply_to = await event.get_reply_message()
-        if reply_to:
-            return await reply_to.reply(
-                text, parse_mode=parse_mode, link_preview=link_preview
-            )
-        return await event.reply(text, parse_mode=parse_mode, link_preview=link_preview)
-    return await event.edit(text, parse_mode=parse_mode, link_preview=link_preview)
-
-async def eor(event, text, parse_mode=None, link_preview=None):
-    link_preview = link_preview or False
-    global SUDO_USERS
-    parse_mode = parse_mode or "md"
-    if event.sender_id in SUDO_USERS:
         reply_to = await event.get_reply_message()
         if reply_to:
             return await reply_to.reply(
@@ -349,7 +294,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/sn12384)"
+            link = "[here](https://t.me/deviluserbot)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
