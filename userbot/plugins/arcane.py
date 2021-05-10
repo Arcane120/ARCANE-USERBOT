@@ -34,9 +34,9 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙰𝚁𝙲𝙰𝙽𝙴"
 global ghanti
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
-#@command(outgoing=True, pattern="^.awake$")
-@borg.on(admin_cmd(pattern=r"awake")) 
-@borg.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
+#@command(outgoing=True, pattern="^.arcane$")
+@borg.on(admin_cmd(pattern=r"arcane")) 
+@borg.on(sudo_cmd(pattern="arcane ?(.*)", allow_sudo=True))
 async def amireallyalive(arcane):
    """ For .arcane command, check if the bot is running or not.  """
    tag = borg.uid
