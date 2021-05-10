@@ -1,4 +1,7 @@
-# FIX BY TEAM DYNAMIC AMAN PANDEY
+#Ascii module by @legendx22 for @LEGENDBOT_official
+#A over powerful bot
+#I know u will kang... 
+#GTFO!! MOTHERFUCKER!!!!!!!!!!!
 
 
 from telethon import events
@@ -14,6 +17,7 @@ mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 
 @bot.on(admin_cmd("ascii ?(.*)"))
+@bot.on(sudo_cmd(pattern="ascii ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
