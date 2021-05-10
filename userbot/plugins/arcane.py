@@ -4,7 +4,6 @@ import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, StartTime, CMD_HELP
-from . import legend
 from userbot.legend import BOT
 from userbot.utils import admin_cmd, sudo_cmd
 from telethon import version
@@ -25,8 +24,8 @@ global ghanti
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.arcane$")
-@borg.on(admin_cmd(pattern=r"arcane")) 
-async def amireallyalive(arcane):
+@borg.on(admin_cmd(pattern=r"awake"))
+async def amireallyalive(awake):
    """ For .arcane command, check if the bot is running or not.  """
    tag = borg.uid
    uptm = await legend.get_readable_time((time.time() - StartTime))
@@ -45,7 +44,7 @@ async def amireallyalive(arcane):
 CMD_HELP.update(
     {
         "arcane": "Plugin : arcane\
-    \n\nSyntax : .arcane\
+    \n\nSyntax : .awake\
     \nFunction : you can set here costom alive pic .set var ALIVE_PHOTTO (Telegraph link)"
     }
 )
