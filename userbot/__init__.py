@@ -1,11 +1,15 @@
+
 import os
 import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
+from userbot.helpers import functions as simpdef
 from userbot.uniborgConfig import Config
 from var import Var
+devilversion = "2.0"
 StartTime = time.time()
+
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
@@ -14,7 +18,7 @@ else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-DEVS = [1392872370,1201548766]
+
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
@@ -22,42 +26,22 @@ CMD_HELP_BOT = {}
 BRAIN_CHECKER = []
 INT_PLUG = ""
 LOAD_PLUG = {}
-#from userbot import xbot 
-#xbot = xbot 
+
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
-def HELP(**LEGENDX):
-	see = LEGENDX.get("NAME", None)
-	helper = LEGENDX.get("HELP", None)
-	if see is None:
-		LEGENDX["NAME"] = __name__
-		CMD_HELP.update({see: helper})
-	elif helper is None:
-		LEGENDX[
-		    "HELP"] = "🥺🥺NOT COMMAND HELP🥺🥺\nADDED HERE\nIF YOU WANT TO KNOW ABOUT THIS PLUG-IN\nJOIN @Arcane_Bot_Support"
-	else:
-	  CMD_HELP.update({see: helper})
-	CMD_HELP.update({see: helper})
 
-
-LEGEND_ID = ["1392872370"]
+LEGEND_ID = ["1037581197"]
 
 """ PPE initialization. """
 
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
 import asyncio
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+
 import pylast
 from pySmartDL import SmartDL
 from requests import get
 # Bot Logs setup:
-async def eor(event, msg):
-  try:
-      await event.edit(msg)
-  except:
-       await event.reply(msg)
-
 if bool(ENV):
     CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
@@ -125,7 +109,7 @@ if bool(ENV):
     # FedBan Premium Module
     F_BAN_LOGGER_GROUP = os.environ.get("F_BAN_LOGGER_GROUP", None)
 
-    #make by TEAM ARCANE 
+    #make by LEGEND X 
     botnickname = os.environ.get("BOT_NICK_NAME", None)
 
 # Heroku Credentials for updater.
@@ -157,7 +141,7 @@ if bool(ENV):
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/LEGENDXOP/LEGEND-BOT.git")
+    "https://github.com/Arcane120/ARCANE-USERBOT.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -214,5 +198,11 @@ ISAFK = False
 AFKREASON = None
 SUDO_LIST = {}
 
+
 from userbot.helpers import *
 from userbot.helpers import functions as legdef
+
+
+   
+    
+    
