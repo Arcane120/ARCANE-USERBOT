@@ -1,4 +1,4 @@
-# FIX BY TEAM DYNAMIC AMAN PANDEY
+
 
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot import CMD_HELP, ALIVE_NAME
@@ -11,6 +11,7 @@ mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 
 @bot.on(admin_cmd(pattern="carry (.*)"))
+@bot.on(sudo_cmd(pattern="carry (.*)", allow_sudo=True))
 async def legendx22(carry):
     name = carry.pattern_match.group(1)
     await edit_or_reply(
