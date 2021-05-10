@@ -1,4 +1,6 @@
-# FIX BY TEAM DYNAMIC AMAN PANDEY      .
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.     .
 from telethon.tl.functions.messages import SaveDraftRequest
 
 from userbot import CMD_HELP
@@ -6,6 +8,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="chain$"))
+@bot.on(sudo_cmd(pattern="chain$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
