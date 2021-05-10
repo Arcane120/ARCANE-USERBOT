@@ -13,7 +13,6 @@ from userbot.plugins.sql_helper.echo_sql import addecho, get_all_echos, is_echo,
 
 
 @bot.on(admin_cmd(pattern="echo$"))
-@bot.on(sudo_cmd(pattern="echo$", allow_sudo=True))
 async def echo(hell):
     if hell.fwd_from:
         return
@@ -38,7 +37,6 @@ async def echo(hell):
 
 
 @bot.on(admin_cmd(pattern="rmecho$"))
-@bot.on(sudo_cmd(pattern="rmecho$", allow_sudo=True))
 async def echo(hell):
     if hell.fwd_from:
         return
@@ -62,7 +60,6 @@ async def echo(hell):
 
 
 @bot.on(admin_cmd(pattern="listecho$"))
-@bot.on(sudo_cmd(pattern="listecho$", allow_sudo=True))
 async def echo(hell):
     if hell.fwd_from:
         return
