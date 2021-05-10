@@ -37,7 +37,6 @@ uptime = get_readable_time((time.time() - StartTime))
 
 
 @borg.on(admin_cmd(pattern="loda$"))
-@borg.on(sudo_cmd(pattern="loda$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
