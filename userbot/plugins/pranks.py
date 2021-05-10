@@ -34,8 +34,8 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from . import *
 
 
-@borg.on(admin_cmd(pattern=r"threats"))
-@bot.on@borg.on(sudo_cmd(pattern="threats ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"threats"))
+@bot.on(sudo_cmd(pattern="threats ?(.*)", allow_sudo=True))
 async def LEGENDBOT(hellmemes):
     replied = await hellmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
