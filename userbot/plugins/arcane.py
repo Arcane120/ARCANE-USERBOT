@@ -4,7 +4,7 @@ import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, StartTime, CMD_HELP
-#from . import legend
+from . import legend
 from userbot.legend import BOT
 from userbot.utils import admin_cmd, sudo_cmd
 from telethon import version
