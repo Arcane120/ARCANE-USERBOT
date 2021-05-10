@@ -86,7 +86,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 @bot.on(admin_cmd(pattern=r"ping"))
-@borg.on(sudo_cmd(pattern="ping ?(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="ping ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -101,7 +101,7 @@ async def _(event):
 
     
 @bot.on(admin_cmd(pattern=r"ting"))
-@borg.on(sudo_cmd(pattern="ting ?(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="ting ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
