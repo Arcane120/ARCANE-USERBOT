@@ -8,7 +8,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ARCANE USERBOT"
 
 from heroku_config import Var as Config
 
-@borg.on(admin_cmd(pattern=f"hping$", outgoing=True))
+@borg.on(admin_cmd(pattern=r"hping"))
+@borg.on(sudo_cmd(pattern="hping ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -84,8 +85,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-@bot.on(admin_cmd(pattern="ping$"))
-@bot.on(sudo_cmd(pattern="ping$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"ping"))
+@borg.on(sudo_cmd(pattern="ping ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -99,8 +100,8 @@ async def _(event):
     )
 
     
-@bot.on(admin_cmd(pattern="ting$"))
-@bot.on(sudo_cmd(pattern="ting$", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"ting"))
+@borg.on(sudo_cmd(pattern="ting ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
