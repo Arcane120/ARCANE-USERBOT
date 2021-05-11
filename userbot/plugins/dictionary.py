@@ -11,7 +11,6 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="ud (.*)"))
-@bot.on(sudo_cmd(pattern="ud (.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -30,7 +29,6 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern="meaning (.*)"))
-@bot.on(sudo_cmd(pattern="meaning (.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
