@@ -8,7 +8,6 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="chain$"))
-@bot.on(sudo_cmd(pattern="chain$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
