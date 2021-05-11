@@ -16,7 +16,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
 
 
 @bot.on(admin_cmd(pattern="download(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="download(?: |$)(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
