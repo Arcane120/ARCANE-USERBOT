@@ -6,7 +6,6 @@ from telethon import events
 from userbot import CMD_HELP
 
 @bot.on(admin_cmd(pattern="degi$"))
-@bot.on(sudo_cmd(pattern="degi$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -31,7 +30,6 @@ async def _(event):
 
 
 @bot.on(admin_cmd(pattern=f"nehi$", outgoing=True))
-@bot.on(sudo_cmd(pattern=f"nehi$", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
