@@ -35,7 +35,6 @@ from . import *
 
 
 @bot.on(admin_cmd(pattern="threats(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="threats(?: |$)(.*)", allow_sudo=True))
 async def LEGENDBOT(hellmemes):
     replied = await hellmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
@@ -88,7 +87,6 @@ async def LEGENDBOT(hellmemes):
 
 
 @bot.on(admin_cmd(pattern="trash(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="trash(?: |$)(.*)", allow_sudo=True))
 async def LEGENDBOT(hellmemes):
     replied = await hellmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
@@ -141,7 +139,6 @@ async def LEGENDBOT(hellmemes):
 
 
 @bot.on(admin_cmd(pattern="trap(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="trap(?: |$)(.*)", allow_sudo=True))
 async def LEGENDBOT(hellmemes):
     input_str = hellmemes.pattern_match.group(1)
     input_str = deEmojify(input_str)
@@ -204,7 +201,6 @@ async def LEGENDBOT(hellmemes):
 
 
 @bot.on(admin_cmd(pattern="phc(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="phc(?: |$)(.*)", allow_sudo=True))
 async def LEGENDBOT(hellmemes):
     input_str = hellmemes.pattern_match.group(1)
     input_str = deEmojify(input_str)
