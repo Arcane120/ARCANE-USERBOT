@@ -14,7 +14,7 @@ API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
 import time
-from userbot import ALIVE_NAME, bot
+from userbot import botnickname, ALIVE_NAME, bot
 token = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
 xbot = TelegramClient("GODBOYX", API_ID, API_HASH).start(bot_token=token)
 pbot = Client("GODBOYX", api_id=API_ID, api_hash=API_HASH, bot_token=token)
