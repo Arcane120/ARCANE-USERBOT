@@ -15,7 +15,6 @@ LANG = "en"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="carbon(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="carbon(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     await e.edit("`Processing..`")
@@ -77,7 +76,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="krb"))
-@bot.on(sudo_cmd(pattern="krb", allow_sudo=True))
 async def carbon_api(e):
     hell = await edit_or_reply(e, "`Processing....`")
     CARBON = "https://carbon.now.sh/?l={lang}&code={code}"
@@ -159,7 +157,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"kar1(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="kar1(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     hell = await edit_or_reply(e, "🔲🔲🔲🔲🔲")
@@ -218,7 +215,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"kar2(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="kar2(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     hell = await edit_or_reply(e, "📛📛📛📛📛")
@@ -277,7 +273,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"kar3(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="kar3(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     hell = await edit_or_reply(e, "🎛🎛🎛🎛🎛")
@@ -340,7 +335,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"kar4(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="kar4(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     """ A Wrapper for carbon.now.sh """
     hell = await edit_or_reply(e, "🌚🌚🌚🌚🌚")
@@ -403,7 +397,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"rgbk2(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="rgbk2(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     RED = random.randint(0, 256)
     GREEN = random.randint(0, 256)
@@ -470,7 +463,6 @@ async def carbon_api(e):
 
 
 @bot.on(admin_cmd(pattern=f"kargb(?: |$)(.*)", outgoing=True))
-@bot.on(sudo_cmd(pattern="kargb(?: |$)(.*)", allow_sudo=True))
 async def carbon_api(e):
     RED = random.randint(0, 256)
     GREEN = random.randint(0, 256)
