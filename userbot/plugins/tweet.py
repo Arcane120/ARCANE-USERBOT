@@ -14,7 +14,6 @@ from userbot.helpers.functions import trumptweet, changemymind, kannagen, moditw
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 @bot.on(admin_cmd(pattern=r"tweet(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="tweet(?: |$)(.*)", allow_sudo=True))
 async def nope(legendx22):
     hell = legendx22.pattern_match.group(1)
     if not hell:
@@ -33,7 +32,6 @@ async def nope(legendx22):
 
 
 @bot.on(admin_cmd(pattern=r"trump(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="trump(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -61,7 +59,6 @@ async def nekobot(borg):
     await borg.delete()
     
 @bot.on(admin_cmd(pattern=r"modi(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="modi(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -90,7 +87,6 @@ async def nekobot(borg):
 
     
 @bot.on(admin_cmd(pattern=r"mia(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="mia(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -119,7 +115,6 @@ async def nekobot(borg):
 
 #@register(pattern="^.pappu(?: |$)(.*)", outgoing=True)
 @bot.on(admin_cmd(pattern=r"pappu(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="pappu(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -148,7 +143,6 @@ async def nekobot(borg):
 
 #@register(pattern="^.sunny(?: |$)(.*)", outgoing=True)
 @bot.on(admin_cmd(pattern=r"sunny(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="sunny(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -177,7 +171,6 @@ async def nekobot(borg):
 
 #@register(pattern="^.johhny(?: |$)(.*)", outgoing=True)
 @bot.on(admin_cmd(pattern=r"johhny(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="johhny(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -205,7 +198,6 @@ async def nekobot(borg):
     await borg.delete() 
 
 @bot.on(admin_cmd(pattern=r"gandhi(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="gandhi(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -234,7 +226,6 @@ async def nekobot(borg):
 
 #@register(pattern="^.cmm(?: |$)(.*)", outgoing=True)
 @bot.on(admin_cmd(pattern=r"cmm(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="cmm(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
@@ -263,7 +254,6 @@ async def nekobot(borg):
     
 #@register(pattern="^.kanna(?: |$)(.*)", outgoing=True)
 @bot.on(admin_cmd(pattern=r"kanna(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="kanna(?: |$)(.*)", allow_sudo=True))
 async def nekobot(borg):
     text = borg.pattern_match.group(1)
     reply_to_id = borg.message
